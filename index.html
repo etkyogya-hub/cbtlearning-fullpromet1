@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Simulasi ASN & P3K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OPEN GRAPH / SOCIAL PREVIEW -->
+  <meta property="og:title" content="Quiz Simulasi Aktual Ujian ASN & P3K">
+  <meta property="og:description" content="Soal TKP, TKW, TIU Figural + Rationale Generator 7 Langkah">
+  <meta property="og:image" content="https://raw.githubusercontent.com/etkyogya-hub/cbtlearning-asn/main/videos/assets/TubeSt.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- OPTIONAL TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #2563eb;
+      --text-dark: #1f2937;
+      --text-muted: #6b7280;
+      --bg-light: #f9fafb;
+      --danger: #b91c1c;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    /* HERO */
+    .hero img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+
+    /* MAIN WRAPPER */
+    .main {
+      max-width: 760px;
+      margin: auto;
+      padding: 24px 16px 120px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-top: 28px;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .subtitle strong {
+      color: var(--secondary);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 14px;
+      margin: 24px 0 10px;
+      background: #000;
+    }
+
+    .warning {
+      font-weight: 600;
+      color: var(--danger);
+      margin-bottom: 20px;
+    }
+
+    /* SOCIAL */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin: 26px 0;
+      flex-wrap: wrap;
+    }
+
+    .social img {
+      width: 36px;
+    }
+
+    /* REGISTER CARD */
+    .register {
+      background: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+      margin: 24px 0;
+    }
+
+    .register input {
+      width: 100%;
+      max-width: 320px;
+      padding: 12px;
+      margin: 6px 0;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+    }
+
+    .register button {
+      margin-top: 10px;
+      padding: 12px 26px;
+      font-size: 15px;
+      border: none;
+      border-radius: 10px;
+      background: var(--secondary);
+      color: white;
+      cursor: pointer;
+    }
+
+    /* ACTION BUTTONS */
+    .action-btn {
+      width: 100%;
+      max-width: 360px;
+      padding: 14px;
+      margin: 10px auto;
+      font-size: 16px;
+      border-radius: 12px;
+      border: none;
+      background: #e5e7eb;
+      color: #374151;
+      cursor: pointer;
+    }
+
+    .action-btn:not(:disabled) {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* DANA QR FIXED */
+    .qr {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+    }
+
+    .qr img {
+      width: 130px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="videos/assets/TubeSt.jpg" alt="CBT ASN">
+</div>
+
+<div class="main">
+
+  <h1>Quiz Simulasi Aktual Ujian ASN dan P3K</h1>
+
+  <p class="subtitle">
+    Berdasarkan soal-soal <strong>TKP, TKW, dan TIU</strong> dengan pendekatan figural
+  </p>
+
+  <p class="subtitle">
+    Disertai metode pemecahan <strong>7 langkah Rationale Generator</strong>
+    sebagai pengganti bimbingan tes Anda
+  </p>
+
+  <!-- VIDEO -->
+  <video id="introVideo" src="videos/TubStV.mp4" controls playsinline></video>
+
+  <div class="warning">
+    ⚠️ Video WAJIB ditonton sampai selesai sebelum membuka Quiz & Rationale
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="social">
+    <a href="tel:+6285399652487"><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png"></a>
+    <a href="https://wa.me/6285399652487"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
+    <a href="mailto:gyoutrain@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"></a>
+    <a href="https://web.facebook.com/gyouskill/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+    <a href="https://www.instagram.com/etkyogya"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></a>
+  </div>
+
+  <!-- REGISTER -->
+  <div class="register">
+    <input id="name" placeholder="Nama Lengkap">
+    <input id="wa" placeholder="Nomor WhatsApp">
+    <br>
+    <button onclick="verifyUser()">Verify</button>
+  </div>
+
+  <!-- BUTTONS -->
+  <button id="quizBtn" class="action-btn" disabled>🔒 Buka Quiz</button>
+  <button id="rationaleBtn" class="action-btn" disabled>🔒 Buka Rationale</button>
+
+</div>
+
+<!-- DANA QR -->
+<div class="qr">
+  <img src="videos/assets/danaqr.png" alt="DANA QR">
+</div>
+
+<script>
+const video = document.getElementById("introVideo");
+const quizBtn = document.getElementById("quizBtn");
+const rationaleBtn = document.getElementById("rationaleBtn");
+
+if (localStorage.videoDone === "true") {
+  quizBtn.disabled = false;
+  quizBtn.textContent = "▶ Buka Quiz";
+}
+if (localStorage.videoDone === "true" && localStorage.verified === "true") {
+  rationaleBtn.disabled = false;
+  rationaleBtn.textContent = "▶ Buka Rationale";
+}
+
+video.onended = () => {
+  localStorage.videoDone = "true";
+  quizBtn.disabled = false;
+  quizBtn.textContent = "▶ Buka Quiz";
+};
+
+quizBtn.onclick = () => {
+  if (localStorage.videoDone === "true") {
+    window.open("https://script.google.com/macros/s/AKfycbyqiTjNvPJ62eCgjYp28zzjA6pzi_OEiF5XUzEGoEXmaJbs5mnsarqa5e9vohm99b-I/exec","_blank");
+  }
+};
+
+function verifyUser() {
+  const name = document.getElementById("name").value.trim();
+  const wa = document.getElementById("wa").value.trim();
+  if (!name || !wa) return alert("Lengkapi Nama dan WA");
+
+  localStorage.verified = "true";
+
+  const msg = `Nama: ${name}
+WA#: ${wa}
+
+Welcome to the CBT Learning, your partner to success`;
+
+  window.open(`https://wa.me/6285399652487?text=${encodeURIComponent(msg)}`,"_blank");
+
+  if (localStorage.videoDone === "true") {
+    rationaleBtn.disabled = false;
+    rationaleBtn.textContent = "▶ Buka Rationale";
+  }
+}
+
+rationaleBtn.onclick = () => {
+  if (localStorage.videoDone === "true" && localStorage.verified === "true") {
+    window.open("https://script.google.com/macros/s/AKfycbw87IVb5Ui0TRsPuuLcp1tiUFLuqnkDk6VEQytTsA1CDo7jd1tWBzyCOMXpX12KbDx4GA/exec","_blank");
+  }
+};
+</script>
+
+</body>
+</html>
